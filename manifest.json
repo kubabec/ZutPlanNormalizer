@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "ZUT Plan Normalizer 1.0",
+    "description": "Wyświetlanie planu zajęć według dni tygodnia",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
